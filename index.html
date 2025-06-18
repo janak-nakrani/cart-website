@@ -7,82 +7,76 @@
     <title>Shoping Page</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="../cdn/bootstrap.css">
+    <link rel="stylesheet" href="../cdn/bootstrap.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
-<!--     <script src="JSMain.js"></script> -->
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="JSMain.js"></script> -->
     <!-- <link rel="stylesheet" href="JSMain.css"> -->
     <!-- <script src="../../shittal/bootstrap.js"></script> -->
 
     <style>
-        img{
-    aspect-ratio: 3/4;
-}
-.button {
-    --color: #a5ebe7;
-    padding: 2px 12px;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    color: var(--color);
-    z-index: 1;
-   }
-   
-   .button::before, .button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
-   }
-   
-   .button::before {
-    top: -1em;
-    left: -1em;
-   }
-   
-   .button::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-   }
-   
-   .button:hover::before, .button:hover::after {
-    height: 410px;
-    width: 410px;
-   }
-   
-   .button:hover {
-    color: rgb(10, 25, 30);
-   }
-   
-   .button:active {
-    filter: brightness(.8);
-   }
-   
+        img {
+            aspect-ratio: 3/4;
+        }
+
+        .button {
+            --color: #a5ebe7;
+            padding: 2px 12px;
+            background-color: transparent;
+            border-radius: .3em;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: .5s;
+            font-weight: 400;
+            font-size: 17px;
+            border: 1px solid;
+            font-family: inherit;
+            color: var(--color);
+            z-index: 1;
+        }
+
+        .button::before,
+        .button::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+            background-color: var(--color);
+            transition: 1s ease;
+        }
+
+        .button::before {
+            top: -1em;
+            left: -1em;
+        }
+
+        .button::after {
+            left: calc(100% + 1em);
+            top: calc(100% + 1em);
+        }
+
+        .button:hover::before,
+        .button:hover::after {
+            height: 410px;
+            width: 410px;
+        }
+
+        .button:hover {
+            color: rgb(10, 25, 30);
+        }
+
+        .button:active {
+            filter: brightness(.8);
+        }
     </style>
 </head>
 
@@ -134,21 +128,21 @@
 
 <script>
     const shopping = [
-            ["Pink tshirt", "images/Tshirt1.jpg", 600],
-            ["White tshirt", "images/Tshirt2.jpg", 620],
-            ["Yellow tshirt", "images/Tshirt3.jpg", 540],
-            ["Black tshirt", "images/Tshirt4.webp", 870],
-            ["BLue tshirt", "images/Tshirt5.jpg", 730],
-            ["Orange tshirt", "images/Tshirt6.jpg", 580],
-            ["Red tshirt", "images/Tshirt7.jpg", 760],
-            ["Olive tshirt", "images/Tshirt8.jpg", 830],
-            ["Grey tshirt", "images/Tshirt9.webp", 650],
-            ["Peach tshirt", "images/Tshirt10.jpg", 900]
-        ]
+        ["Pink tshirt", "images/Tshirt1.jpg", 600],
+        ["White tshirt", "images/Tshirt2.jpg", 620],
+        ["Yellow tshirt", "images/Tshirt3.jpg", 540],
+        ["Black tshirt", "images/Tshirt4.webp", 870],
+        ["BLue tshirt", "images/Tshirt5.jpg", 730],
+        ["Orange tshirt", "images/Tshirt6.jpg", 580],
+        ["Red tshirt", "images/Tshirt7.jpg", 760],
+        ["Olive tshirt", "images/Tshirt8.jpg", 830],
+        ["Grey tshirt", "images/Tshirt9.webp", 650],
+        ["Peach tshirt", "images/Tshirt10.jpg", 900]
+    ]
 
-        body = "";
-        for (let i = 0; i < shopping.length; i++) {
-            body += `<div class="col p-2">
+    body = "";
+    for (let i = 0; i < shopping.length; i++) {
+        body += `<div class="col p-2">
                 <div class="card bg-dark text-light text-center">
                     <div class="card-header">${shopping[i][0]}</div>
                         <div class="text-center card-image card-image-hover-zoom"> 
@@ -160,78 +154,78 @@
                     </div>
                 </div>
             </div>` ;
+    }
+
+    function initialize() {
+        document.getElementById("CardMain").innerHTML = body;
+    }
+
+    const cart = [];
+
+    function addtoCart(i) {
+
+        let name = shopping[i][0];
+        let images = shopping[i][1];
+        let price = shopping[i][2];
+        let Qtys = 1;
+        let position = i;
+
+        // var index = Data.map(function(e) { return e.name; }).indexOf('Nick');
+        let keyofPosition = cart.map(function (e) { return e.position; }).indexOf(position);
+        console.log(keyofPosition);
+
+        if (keyofPosition != -1) {
+            cart[keyofPosition]["price"] += shopping[i][2];
+            cart[keyofPosition]["quantity"] += 1;
+        } else {
+            cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "position": position };
+            cart.push(cartitem);
         }
 
-        function initialize() {
-            document.getElementById("CardMain").innerHTML = body;
-        }
+        // Or
+        // if(keyofPosition == -1) {
+        //     cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "position": position };
+        //     cart.push(cartitem);
+        // } else {
+        //     cart[keyofPosition]["price"] += shopping[i][2];
+        //     cart[keyofPosition]["quantity"] += 1;
+        // }
 
-        const cart = [];
+        //if(cart.length > 0) {
+        // for (let j = 0; j < cart.length; j++) {
+        //     //alert(cart[j]["index"]);
+        //     if(cart[j]["index"] == index) {
+        //         cart[j]["price"] += shopping[i][2];
+        //         cart[j]["quantity"] += 1;
+        //         break;
+        //     } else {
+        //         cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "index": index };
+        //         cart.push(cartitem);
+        //         break;
+        //     }
+        //     console.log("++++++++++");
+        // }
+        //} else {
+        // cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "index": index };
+        // cart.push(cartitem);
+        //}
+        console.log(cart);
 
-        function addtoCart(i) {
-
-            let name = shopping[i][0];
-            let images = shopping[i][1];
-            let price = shopping[i][2];
-            let Qtys = 1;
-            let position = i;
-
-            // var index = Data.map(function(e) { return e.name; }).indexOf('Nick');
-            let keyofPosition = cart.map(function (e) { return e.position; }).indexOf(position);
-            console.log(keyofPosition);
-
-            if (keyofPosition != -1) {
-                cart[keyofPosition]["price"] += shopping[i][2];
-                cart[keyofPosition]["quantity"] += 1;
-            } else {
-                cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "position": position };
-                cart.push(cartitem);
-            }
-
-            // Or
-            // if(keyofPosition == -1) {
-            //     cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "position": position };
-            //     cart.push(cartitem);
-            // } else {
-            //     cart[keyofPosition]["price"] += shopping[i][2];
-            //     cart[keyofPosition]["quantity"] += 1;
-            // }
-
-            //if(cart.length > 0) {
-            // for (let j = 0; j < cart.length; j++) {
-            //     //alert(cart[j]["index"]);
-            //     if(cart[j]["index"] == index) {
-            //         cart[j]["price"] += shopping[i][2];
-            //         cart[j]["quantity"] += 1;
-            //         break;
-            //     } else {
-            //         cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "index": index };
-            //         cart.push(cartitem);
-            //         break;
-            //     }
-            //     console.log("++++++++++");
-            // }
-            //} else {
-            // cartitem = { "name": name, "image": images, "price": price, "quantity": Qtys, "index": index };
-            // cart.push(cartitem);
-            //}
-            console.log(cart);
-
-            prepareacarthtml(cart);
-        }
+        prepareacarthtml(cart);
+    }
 
 
-        function prepareacarthtml(cart) {
-            let carthtml = "";
-            let num = 0;
-            let Total = 0;
-            let nos = 0;
-            for (let n in cart) {
-                num += 1;
-                Total += cart[n]["price"];
-                nos += 1;
-                carthtml +=
-                    `<div class="card mb-3">
+    function prepareacarthtml(cart) {
+        let carthtml = "";
+        let num = 0;
+        let Total = 0;
+        let nos = 0;
+        for (let n in cart) {
+            num += 1;
+            Total += cart[n]["price"];
+            nos += 1;
+            carthtml +=
+                `<div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-4 text-center">
                         <img src="${cart[n]["image"]}" class="img-fluid rounded-start border-end" alt="...">
@@ -248,17 +242,17 @@
                 </div>
             </div>`
 
-            }
-            document.getElementById("CartBody").innerHTML = carthtml;
-            document.getElementById("num").innerHTML = num;
-            document.getElementById("total").innerHTML = "Total : " + Total + " Rs";
-            document.getElementById("Qty").innerHTML = "Total item : " + nos;
         }
+        document.getElementById("CartBody").innerHTML = carthtml;
+        document.getElementById("num").innerHTML = num;
+        document.getElementById("total").innerHTML = "Total : " + Total + " Rs";
+        document.getElementById("Qty").innerHTML = "Total item : " + nos;
+    }
 
-        function removecartitem(key) {
-            cart.splice(key, 1)
-            prepareacarthtml(cart)
-        }
+    function removecartitem(key) {
+        cart.splice(key, 1)
+        prepareacarthtml(cart)
+    }
 </script>
 
 </html>
